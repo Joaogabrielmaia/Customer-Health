@@ -1,0 +1,121 @@
+﻿conta_id,conta,segmento,plano,veiculos,cidade,csm,mrr,fim_contrato
+acc-001,Fretes Carvalho,Fretamento,PROFISSIONAL,37,Joinville,Rafael Teixeira,934,2026-10-17
+acc-002,Entregas Almeida,Frigorificados,PROFISSIONAL,36,Contagem,Camila Ferreira,922,2027-02-23
+acc-003,Fretes Teixeira,Frigorificados,BASICO,4,Contagem,Bruno Souza,238,2027-08-28
+acc-004,Logística Ferreira,Entregas urbanas,PROFISSIONAL,37,Contagem,Rafael Teixeira,934,2027-07-12
+acc-005,Fretes Rocha & Barbosa,Cargas secas,PROFISSIONAL,38,Anápolis,Camila Ferreira,946,2027-02-24
+acc-006,Transportes Araújo & Almeida,Frigorificados,PROFISSIONAL,36,Juiz de Fora,Bruno Souza,922,2027-02-05
+acc-007,Rotas Carvalho,Cargas secas,FROTA_PLUS,91,Londrina,Rafael Teixeira,2082,2027-02-05
+acc-008,Transportes Ferreira,Cargas secas,BASICO,7,Juiz de Fora,Camila Ferreira,274,2027-03-18
+acc-009,Fretes Souza,Frigorificados,BASICO,5,Sorocaba,Bruno Souza,250,2026-12-17
+acc-010,Logística Cavalcanti,Frigorificados,BASICO,4,Uberlândia,Rafael Teixeira,238,2027-10-01
+acc-011,Fretes Dias,Entregas urbanas,BASICO,4,Anápolis,Camila Ferreira,238,2026-10-23
+acc-012,Logística Barbosa,Entregas urbanas,PROFISSIONAL,13,Campinas,Bruno Souza,646,2027-08-14
+acc-013,Logística Ribeiro & Oliveira,Frigorificados,BASICO,4,Joinville,Rafael Teixeira,238,2027-07-31
+acc-014,Fretes Santos,Frigorificados,BASICO,10,Contagem,Camila Ferreira,310,2027-08-27
+acc-015,Entregas Cavalcanti,Cargas secas,PROFISSIONAL,16,Goiânia,Bruno Souza,682,2026-11-18
+acc-016,Rotas Cardoso,Cargas secas,BASICO,7,Contagem,Rafael Teixeira,274,2027-09-21
+acc-017,Entregas Ribeiro,Cargas secas,BASICO,4,Ribeirão Preto,Camila Ferreira,238,2027-01-13
+acc-018,Cargas Nascimento,Frigorificados,FROTA_PLUS,43,Londrina,Bruno Souza,1506,2027-03-22
+acc-019,Fretes Teixeira & Rodrigues,Fretamento,PROFISSIONAL,12,Joinville,Rafael Teixeira,634,2027-08-31
+acc-020,Cargas Almeida & Almeida,Frigorificados,PROFISSIONAL,38,Uberlândia,Camila Ferreira,946,2027-09-16
+acc-021,Entregas Ferreira,Cargas secas,PROFISSIONAL,30,Sorocaba,Bruno Souza,850,2027-06-02
+acc-022,Rotas Gomes,Fretamento,BASICO,9,Betim,Rafael Teixeira,298,2026-10-15
+acc-023,Entregas Souza,Entregas urbanas,FROTA_PLUS,84,Goiânia,Camila Ferreira,1998,2027-03-19
+acc-024,Rotas Pereira & Teixeira,Frigorificados,BASICO,10,Campinas,Bruno Souza,310,2026-12-27
+acc-025,Cargas Ribeiro,Entregas urbanas,BASICO,9,Maringá,Rafael Teixeira,298,2027-04-02
+acc-026,Logística Nascimento & Rocha,Fretamento,PROFISSIONAL,16,Ribeirão Preto,Camila Ferreira,682,2027-10-02
+acc-027,Transportes Dias & Barbosa,Cargas secas,PROFISSIONAL,20,Betim,Bruno Souza,730,2027-03-13
+acc-028,Cargas Silva & Moreira,Entregas urbanas,BASICO,6,Betim,Rafael Teixeira,262,2027-06-23
+acc-029,Transportes Souza & Gomes,Cargas secas,PROFISSIONAL,31,Contagem,Camila Ferreira,862,2026-11-01
+acc-030,Fretes Barbosa & Teixeira,Fretamento,BASICO,8,Campinas,Bruno Souza,286,2027-07-16
+acc-031,Rotas Souza & Moreira,Frigorificados,BASICO,6,Goiânia,Rafael Teixeira,262,2027-09-08
+acc-032,Rotas Rocha,Entregas urbanas,BASICO,6,Goiânia,Camila Ferreira,262,2027-03-27
+acc-033,Fretes Barbosa & Ferreira,Entregas urbanas,BASICO,9,Joinville,Bruno Souza,298,2027-03-29
+acc-034,Transportes Souza,Fretamento,BASICO,4,Londrina,Rafael Teixeira,238,2027-03-23
+acc-035,Fretes Martins,Fretamento,FROTA_PLUS,45,Juiz de Fora,Camila Ferreira,1530,2027-04-21
+acc-036,Logística Rodrigues & Lima,Entregas urbanas,PROFISSIONAL,35,Londrina,Bruno Souza,910,2027-06-11
+acc-037,Rotas Pereira,Fretamento,PROFISSIONAL,30,Betim,Rafael Teixeira,850,2027-07-13
+acc-038,Transportes Barbosa,Cargas secas,BASICO,7,Juiz de Fora,Camila Ferreira,274,2027-05-26
+acc-039,Logística Moreira & Silva,Frigorificados,PROFISSIONAL,15,Anápolis,Bruno Souza,670,2026-11-10
+acc-040,Logística Teixeira,Entregas urbanas,BASICO,7,Anápolis,Rafael Teixeira,274,2027-07-26
+acc-041,Fretes Moreira,Fretamento,PROFISSIONAL,28,Ribeirão Preto,Camila Ferreira,826,2027-08-27
+acc-042,Rotas Rodrigues,Cargas secas,PROFISSIONAL,14,Maringá,Bruno Souza,658,2026-12-12
+acc-043,Fretes Costa,Frigorificados,FROTA_PLUS,55,Betim,Rafael Teixeira,1650,2027-08-07
+acc-044,Entregas Rocha,Entregas urbanas,PROFISSIONAL,27,Anápolis,Camila Ferreira,814,2027-06-29
+acc-045,Cargas Silva & Oliveira,Entregas urbanas,PROFISSIONAL,13,Contagem,Bruno Souza,646,2027-07-19
+acc-046,Rotas Souza,Frigorificados,BASICO,8,Joinville,Rafael Teixeira,286,2026-10-29
+acc-047,Cargas Moreira,Entregas urbanas,PROFISSIONAL,21,Maringá,Camila Ferreira,742,2027-03-26
+acc-048,Logística Nascimento & Nascimento,Frigorificados,BASICO,9,Maringá,Bruno Souza,298,2027-08-17
+acc-049,Transportes Cavalcanti,Fretamento,BASICO,8,Contagem,Rafael Teixeira,286,2027-09-28
+acc-050,Fretes Mendes,Fretamento,BASICO,4,Londrina,Camila Ferreira,238,2027-10-01
+acc-051,Transportes Teixeira,Entregas urbanas,BASICO,8,Betim,Bruno Souza,286,2027-09-04
+acc-052,Entregas Araújo & Santos,Fretamento,BASICO,10,Goiânia,Rafael Teixeira,310,2027-03-16
+acc-053,Logística Rodrigues,Frigorificados,PROFISSIONAL,16,Campinas,Camila Ferreira,682,2027-06-28
+acc-054,Cargas Ferreira & Ferreira,Cargas secas,FROTA_PLUS,110,Sorocaba,Bruno Souza,2310,2027-09-09
+acc-055,Entregas Teixeira,Cargas secas,BASICO,5,Joinville,Rafael Teixeira,250,2026-10-30
+acc-056,Rotas Lima,Cargas secas,PROFISSIONAL,33,Sorocaba,Camila Ferreira,886,2027-01-08
+acc-057,Rotas Almeida,Fretamento,BASICO,8,Anápolis,Bruno Souza,286,2026-12-01
+acc-058,Cargas Souza & Cavalcanti,Cargas secas,BASICO,8,Contagem,Rafael Teixeira,286,2026-12-31
+acc-059,Fretes Oliveira,Cargas secas,PROFISSIONAL,12,Maringá,Camila Ferreira,634,2027-04-19
+acc-060,Entregas Cardoso,Entregas urbanas,BASICO,5,Londrina,Bruno Souza,250,2027-08-25
+acc-061,Fretes Lima & Carvalho,Frigorificados,PROFISSIONAL,14,Contagem,Rafael Teixeira,658,2027-01-19
+acc-062,Logística Ribeiro,Entregas urbanas,BASICO,7,Londrina,Camila Ferreira,274,2027-01-17
+acc-063,Fretes Cardoso,Fretamento,FROTA_PLUS,75,Uberlândia,Bruno Souza,1890,2027-05-24
+acc-064,Cargas Dias,Entregas urbanas,BASICO,9,Londrina,Rafael Teixeira,298,2027-08-15
+acc-065,Logística Nascimento & Ferreira,Frigorificados,PROFISSIONAL,16,Campinas,Camila Ferreira,682,2027-07-20
+acc-066,Cargas Teixeira,Entregas urbanas,PROFISSIONAL,16,Goiânia,Bruno Souza,682,2027-03-04
+acc-067,Transportes Carvalho,Cargas secas,BASICO,4,Uberlândia,Rafael Teixeira,238,2027-04-27
+acc-068,Transportes Lima & Araújo,Frigorificados,PROFISSIONAL,20,Campinas,Camila Ferreira,730,2027-08-22
+acc-069,Fretes Silva,Entregas urbanas,FROTA_PLUS,58,Betim,Bruno Souza,1686,2027-07-03
+acc-070,Logística Rodrigues & Gomes,Frigorificados,BASICO,4,Anápolis,Rafael Teixeira,238,2027-08-12
+acc-071,Fretes Almeida,Entregas urbanas,BASICO,9,Ribeirão Preto,Camila Ferreira,298,2027-05-25
+acc-072,Transportes Dias,Entregas urbanas,PROFISSIONAL,23,Campinas,Bruno Souza,766,2027-07-10
+acc-073,Fretes Ferreira,Fretamento,FROTA_PLUS,41,Goiânia,Rafael Teixeira,1482,2027-04-28
+acc-074,Cargas Almeida,Fretamento,FROTA_PLUS,52,Contagem,Camila Ferreira,1614,2027-03-28
+acc-075,Cargas Barbosa & Mendes,Cargas secas,BASICO,7,Londrina,Bruno Souza,274,2027-08-10
+acc-076,Rotas Oliveira & Oliveira,Fretamento,BASICO,5,Maringá,Rafael Teixeira,250,2027-04-09
+acc-077,Fretes Moreira & Costa,Cargas secas,PROFISSIONAL,12,Contagem,Camila Ferreira,634,2026-11-02
+acc-078,Fretes Lima,Fretamento,PROFISSIONAL,20,Anápolis,Bruno Souza,730,2026-10-28
+acc-079,Rotas Pereira & Dias,Frigorificados,BASICO,6,Anápolis,Rafael Teixeira,262,2027-01-30
+acc-080,Fretes Martins & Cardoso,Fretamento,BASICO,3,Joinville,Camila Ferreira,226,2027-07-22
+acc-081,Logística Silva,Frigorificados,PROFISSIONAL,34,Joinville,Bruno Souza,898,2027-04-18
+acc-082,Rotas Souza & Barbosa,Fretamento,BASICO,8,Ribeirão Preto,Rafael Teixeira,286,2027-08-06
+acc-083,Logística Moreira & Araújo,Entregas urbanas,PROFISSIONAL,39,Londrina,Camila Ferreira,958,2026-12-02
+acc-084,Entregas Santos,Entregas urbanas,PROFISSIONAL,39,Goiânia,Bruno Souza,958,2027-01-01
+acc-085,Fretes Oliveira & Dias,Cargas secas,PROFISSIONAL,16,Joinville,Rafael Teixeira,682,2027-09-24
+acc-086,Fretes Gomes,Entregas urbanas,PROFISSIONAL,14,Juiz de Fora,Camila Ferreira,658,2027-10-01
+acc-087,Rotas Rocha & Barbosa,Cargas secas,BASICO,10,Goiânia,Bruno Souza,310,2027-10-03
+acc-088,Logística Cardoso & Cavalcanti,Fretamento,BASICO,5,Betim,Rafael Teixeira,250,2027-01-06
+acc-089,Cargas Almeida & Oliveira,Cargas secas,FROTA_PLUS,74,Contagem,Camila Ferreira,1878,2027-05-10
+acc-090,Transportes Oliveira,Entregas urbanas,BASICO,7,Betim,Bruno Souza,274,2026-12-31
+acc-091,Logística Araújo,Fretamento,BASICO,8,Campinas,Rafael Teixeira,286,2027-05-18
+acc-092,Entregas Moreira,Entregas urbanas,BASICO,8,Juiz de Fora,Camila Ferreira,286,2026-12-15
+acc-093,Transportes Cardoso,Frigorificados,BASICO,7,Campinas,Bruno Souza,274,2026-12-10
+acc-094,Transportes Rocha,Cargas secas,BASICO,8,Maringá,Rafael Teixeira,286,2027-08-05
+acc-095,Logística Pereira,Frigorificados,BASICO,7,Juiz de Fora,Camila Ferreira,274,2027-03-21
+acc-096,Rotas Martins,Cargas secas,BASICO,3,Juiz de Fora,Bruno Souza,226,2026-11-19
+acc-097,Entregas Martins,Fretamento,BASICO,8,Maringá,Rafael Teixeira,286,2027-06-28
+acc-098,Logística Oliveira,Entregas urbanas,FROTA_PLUS,48,Anápolis,Camila Ferreira,1566,2027-05-31
+acc-099,Cargas Ferreira,Entregas urbanas,PROFISSIONAL,15,Goiânia,Bruno Souza,670,2027-05-26
+acc-100,Entregas Nascimento & Rocha,Cargas secas,PROFISSIONAL,39,Contagem,Rafael Teixeira,958,2027-07-05
+acc-101,Transportes Santos,Fretamento,FROTA_PLUS,67,Juiz de Fora,Camila Ferreira,1794,2027-03-11
+acc-102,Rotas Costa,Cargas secas,FROTA_PLUS,43,Contagem,Bruno Souza,1506,2026-11-19
+acc-103,Logística Pereira & Martins,Entregas urbanas,BASICO,7,Juiz de Fora,Rafael Teixeira,274,2027-09-17
+acc-104,Fretes Martins & Santos,Cargas secas,PROFISSIONAL,26,Sorocaba,Camila Ferreira,802,2027-03-08
+acc-105,Cargas Barbosa,Frigorificados,FROTA_PLUS,102,Contagem,Bruno Souza,2214,2027-08-02
+acc-106,Fretes Costa & Barbosa,Entregas urbanas,BASICO,5,Campinas,Rafael Teixeira,250,2027-06-29
+acc-107,Cargas Martins,Fretamento,FROTA_PLUS,79,Contagem,Camila Ferreira,1938,2026-11-08
+acc-108,Logística Moreira & Ribeiro,Frigorificados,PROFISSIONAL,15,Betim,Bruno Souza,670,2026-11-29
+acc-109,Rotas Teixeira,Frigorificados,PROFISSIONAL,16,Contagem,Rafael Teixeira,682,2027-06-13
+acc-110,Entregas Carvalho,Cargas secas,BASICO,3,Anápolis,Camila Ferreira,226,2027-08-27
+acc-111,Logística Cardoso & Almeida,Cargas secas,PROFISSIONAL,13,Ribeirão Preto,Bruno Souza,646,2026-11-04
+acc-112,Fretes Oliveira & Oliveira,Entregas urbanas,BASICO,4,Joinville,Rafael Teixeira,238,2026-12-23
+acc-113,Transportes Martins & Almeida,Entregas urbanas,FROTA_PLUS,119,Goiânia,Camila Ferreira,2418,2027-02-15
+acc-114,Cargas Oliveira & Cavalcanti,Frigorificados,BASICO,10,Anápolis,Bruno Souza,310,2026-10-31
+acc-115,Fretes Cavalcanti,Cargas secas,BASICO,7,Maringá,Rafael Teixeira,274,2027-07-06
+acc-116,Fretes Silva & Nascimento,Entregas urbanas,BASICO,7,Campinas,Camila Ferreira,274,2026-11-27
+acc-117,Logística Moreira,Frigorificados,BASICO,8,Londrina,Bruno Souza,286,2026-12-14
+acc-118,Rotas Silva,Cargas secas,BASICO,4,Anápolis,Rafael Teixeira,238,2027-09-21
+acc-119,Entregas Araújo & Silva,Fretamento,BASICO,7,Uberlândia,Camila Ferreira,274,2027-05-25
+acc-120,Logística Dias,Frigorificados,PROFISSIONAL,38,Sorocaba,Bruno Souza,946,2027-07-23
