@@ -16,8 +16,8 @@
 1. Sou o João Gabriel Maia da Costa (Engenharia de Software, PUC Minas) e construí este estudo de caso do discovery à entrega para mostrar como penso Customer Success.
 2. O caso é a **Frota Leve**, SaaS fictício de gestão de frotas com 120 clientes e um CS de 3 pessoas que hoje decide "quem contatar" de cabeça.
 3. O **Termômetro** calcula um score de 0 a 100 em seis dimensões (adoção, engajamento, suporte, satisfação, financeiro e contrato), mostra a contribuição de cada uma e ordena as contas por urgência (risco × valor × renovação).
-4. O diferencial é a **transparência**: score simples, documentado, configurável, testado e com análise de sensibilidade (71 testes unitários, 5 de integração e 13 E2E, todos executados).
-5. Tudo roda local (Next.js, Prisma, PostgreSQL em Docker); as provas são documentos e 13 prints.
+4. O diferencial é a **transparência**: score simples, documentado, configurável, testado e com análise de sensibilidade (76 testes unitários, 5 de integração e 14 E2E, todos executados).
+5. Tudo roda local (Next.js, Prisma, PostgreSQL em Docker); as provas são documentos e 14 prints. A **v1.1.0** acrescentou o alerta de queda brusca.
 
 ## Como o discovery foi feito e de onde vêm os dados
 - **Discovery simulado.** Fiz três reuniões (líder de CS, CSM e dono de transportadora) em que **o Claude interpretou o cliente**. Cada registro começa com *"Simulação: o Claude interpretou o cliente nesta conversa."* As contradições (a líder quer um número só, o CSM quer contexto), os pedidos vagos que refinei e a restrição que mudou o escopo (15 contatos por semana por CSM) estão em [docs/01-discovery](docs/01-discovery/).
@@ -36,7 +36,7 @@
 | [`docs/04-arquitetura`](docs/04-arquitetura/) | ADRs, modelo ER, componentes, wireframes, reunião de validação (com recusa), desempenho medido |
 | [`docs/05-qualidade`](docs/05-qualidade/) | Resultados reais dos testes, reunião de aceitação, revisão de cada sprint |
 | [`docs/06-pos-lancamento`](docs/06-pos-lancamento/) | Retrospectiva, roadmap, v1.1 (PR, changelog) e retrospectiva final |
-| [`docs/screenshots`](docs/screenshots/) | 13 prints numerados gerados com Playwright |
+| [`docs/screenshots`](docs/screenshots/) | 14 prints numerados gerados com Playwright |
 | [`docs/entrevista`](docs/entrevista/) · [`docs/vitrine`](docs/vitrine/) | Perguntas de entrevista (3 por fase) · bullets de currículo, post e respostas de 30 s e 2 min |
 | [`powerbi/`](powerbi/) | CSVs, modelo de dados, medidas DAX e passo a passo para Power BI |
 | [`src/lib/score`](src/lib/score/) | Motor do score (funções puras e tipadas) |
@@ -52,7 +52,7 @@
 4. **Decisões** → [ADRs](docs/04-arquitetura/01-adrs.md) e a [reunião de validação com a recusa justificada](docs/04-arquitetura/04-wireframes-e-validacao.md).
 5. **Modelo** → [modelo ER](docs/04-arquitetura/02-modelo-er.md) e [componentes](docs/04-arquitetura/03-componentes.md).
 6. **Qualidade** → [resultados reais dos testes](docs/05-qualidade/01-plano-e-resultados.md) e a [reunião de aceitação](docs/05-qualidade/02-reuniao-de-aceitacao.md).
-7. **Evolução** → [retrospectiva](docs/06-pos-lancamento/01-reuniao-de-retrospectiva.md), [roadmap](docs/06-pos-lancamento/02-roadmap.md) e a [v1.1](CHANGELOG.md).
+7. **Evolução** → [retrospectiva](docs/06-pos-lancamento/01-reuniao-de-retrospectiva.md), [roadmap](docs/06-pos-lancamento/02-roadmap.md), a [v1.1 (PR e changelog)](docs/06-pos-lancamento/03-pr-v1.1-alerta-queda-brusca.md) e a [retrospectiva final](docs/06-pos-lancamento/04-retrospectiva-final.md).
 
 ---
 
@@ -119,6 +119,11 @@ Pesos e limites ajustáveis, com **simulação sem gravar** e **efeito imediato*
 ### Análise de sensibilidade
 ![Sensibilidade](docs/screenshots/09-sensibilidade.png)
 22 cenários recalculados na hora: mudança de cor, correlação de ranking (Spearman), permanência do top 15 e variação média.
+
+### Alertas de queda brusca (v1.1)
+![Alertas de queda brusca](docs/screenshots/13-alertas-queda-brusca.png)
+Contas cujo score caiu 15 pontos ou mais em 30 dias, da maior queda para a menor, com a dimensão que mais pesou. Também aparece como banner no painel. Na semente padrão são 19 contas (2 delas ainda verdes): um aviso de **tendência**, não de cor.
+**Decisão:** alertar pela *velocidade* da queda, não pela cor, porque a cor já tem sua tela. Veio da retrospectiva e foi entregue em branch, [PR](docs/06-pos-lancamento/03-pr-v1.1-alerta-queda-brusca.md), [changelog](CHANGELOG.md) e tag `v1.1.0`.
 
 ### Exportação
 ![Exportação CSV](docs/screenshots/10-exportacao-csv.png)
@@ -190,10 +195,10 @@ Modelo completo com campos: [modelo ER](docs/04-arquitetura/02-modelo-er.md).
 |---|---|
 | `npm run lint` | sem erros nem avisos |
 | `npm run typecheck` | sem erros |
-| `npm test` | 71 testes passando (cada dimensão, dados ausentes, limites de cor, urgência, explicação, gerador, sensibilidade, playbooks, CSV) |
+| `npm test` | 76 testes passando (cada dimensão, dados ausentes, limites de cor, urgência, explicação, gerador, sensibilidade, playbooks, CSV, alertas) |
 | `npm run test:integration` | 5 testes passando, com PostgreSQL real |
-| `npm run test:e2e` | 13 testes passando (Playwright) |
-| `npm run screenshots` | 13 prints gerados |
+| `npm run test:e2e` | 14 testes passando (Playwright) |
+| `npm run screenshots` | 14 prints gerados |
 
 Problemas que a execução revelou e como resolvi (inclui um bug real do gerador achado por teste): [resultados da qualidade](docs/05-qualidade/01-plano-e-resultados.md). **Não medi cobertura percentual nem rodei auditoria de acessibilidade automatizada.**
 

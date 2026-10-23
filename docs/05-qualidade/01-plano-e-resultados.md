@@ -10,9 +10,22 @@ Tudo abaixo foi executado na minha máquina (Windows 11, Node 24, PostgreSQL 16 
 | Integração | Vitest + PostgreSQL real | Persistência sem perdas (score do banco = score do gerador), papéis, hash de senha, integridade referencial |
 | E2E | Playwright (Chromium) | Fluxos completos: acesso, painel → conta → ação, configuração, exportação, sensibilidade, mobile |
 | Estático | ESLint (`next/core-web-vitals`) e `tsc --noEmit` | Qualidade e tipos |
-| Prints | Playwright (`@screenshots`) | 13 prints numerados em `docs/screenshots/` |
+| Prints | Playwright (`@screenshots`) | 14 prints numerados em `docs/screenshots/` |
 
-## Resultados da última execução (v1.0.0)
+## Resultados da execução da v1.1.0 (versão atual)
+
+| Comando | Resultado |
+|---|---|
+| `npm run lint` | sem erros nem avisos |
+| `npm run typecheck` | sem erros |
+| `npm test` | **4 arquivos, 76 testes passando** (v1.0.0: 71; +5 de alertas) |
+| `npm run test:integration` | **5 testes passando** |
+| `npm run test:e2e` | **14 testes passando** (+1 de alertas) |
+| `npm run screenshots` | 3 cenários passando, 14 imagens geradas (00 a 13) |
+
+Antes de cada rodada de E2E e de prints rodei `npm run db:seed`, porque os testes gravam ações e alteram a configuração.
+
+## Resultados da execução da v1.0.0 (histórico)
 
 | Comando | Resultado |
 |---|---|
