@@ -5,6 +5,7 @@ import { requireSession } from "@/lib/auth";
 const NAV = [
   { href: "/", label: "Painel" },
   { href: "/risco", label: "Contas em risco" },
+  { href: "/alertas", label: "Alertas" },
   { href: "/playbooks", label: "Playbooks" },
   { href: "/sensibilidade", label: "Sensibilidade" },
   { href: "/configuracao", label: "Configuração" },

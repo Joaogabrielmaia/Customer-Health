@@ -4,6 +4,7 @@ import { ColorBadge, Delta, Kpi } from "@/components/ui";
 import { brl, dateBR, num1 } from "@/lib/format";
 import { mainReason } from "@/lib/explain";
 import { weeklyTrend, countByColor } from "@/lib/score/portfolio";
+import { detectSuddenDrops, SUDDEN_DROP_POINTS } from "@/lib/score/alerts";
 import { getScoredPortfolio, withUrgencyIndex } from "@/lib/scored";
 
 export const dynamic = "force-dynamic";
@@ -26,6 +27,7 @@ export default async function DashboardPage() {
     const c = countByColor(rows);
     return { segment, green: c.GREEN, yellow: c.YELLOW, red: c.RED, avg: rows.reduce((s, r) => s + r.result.score, 0) / rows.length, mrrRed: rows.filter((r) => r.result.color === "RED").reduce((s, r) => s + r.mrr, 0) };
   });
+  const drops = detectSuddenDrops(accounts, portfolio.data, asOf, config);
   const top = withUrgencyIndex(accounts.filter((a) => a.result.color !== "GREEN")).slice(0, 5);
 
   return (
@@ -40,6 +42,10 @@ export default async function DashboardPage() {
           <a className="btn-ghost" href="/api/export?tipo=historico" download>Histórico semanal (CSV)</a>
         </div>
       </div>
+
+      <Link href="/alertas" data-testid="drops-banner" className="block rounded-xl border border-red-200 bg-red-50 p-3 text-sm text-red-900 hover:bg-red-100">
+        <strong>{drops.length}</strong> conta(s) com queda brusca de score (≥ {SUDDEN_DROP_POINTS} pontos em 30 dias). Ver alertas →
+      </Link>
 
       <section aria-label="Indicadores" className="grid grid-cols-2 gap-3 lg:grid-cols-4">
         <Kpi label="Score médio" value={num1(avg)} hint={`Há 11 semanas: ${num1(first.avgScore)}`} />

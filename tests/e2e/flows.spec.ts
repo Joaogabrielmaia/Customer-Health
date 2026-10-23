@@ -61,6 +61,18 @@ test.describe("fluxo principal do CS", () => {
   });
 });
 
+test.describe("alertas de queda brusca (v1.1)", () => {
+  test("banner do painel e página de alertas mostram a mesma contagem", async ({ page }) => {
+    await loginOk(page);
+    const banner = await page.getByTestId("drops-banner").innerText();
+    const n = Number(banner.match(/^(\d+)/)![1]);
+    await page.getByTestId("drops-banner").click();
+    await expect(page.getByRole("heading", { name: "Alertas de queda brusca" })).toBeVisible();
+    await expect(page.getByTestId("alerts-summary")).toContainText(`${n} conta(s)`);
+    if (n > 0) await expect(page.getByTestId("alerts-table").locator("tbody tr")).toHaveCount(n);
+  });
+});
+
 test.describe("configuração de pesos", () => {
   test("simular não grava; salvar aplica na hora e voltar ao padrão restaura", async ({ page }) => {
     await loginOk(page, ADMIN);
