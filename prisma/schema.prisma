@@ -1,0 +1,155 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+enum Role {
+  ADMIN
+  CSM
+}
+
+enum Plan {
+  BASICO
+  PROFISSIONAL
+  FROTA_PLUS
+}
+
+enum TicketSeverity {
+  LOW
+  MEDIUM
+  HIGH
+}
+
+enum ActionChannel {
+  LIGACAO
+  EMAIL
+  WHATSAPP
+  REUNIAO
+}
+
+enum ActionOutcome {
+  RESOLVIDO
+  EM_ANDAMENTO
+  SEM_RESPOSTA
+  ESCALADO
+}
+
+model User {
+  id           String     @id
+  name         String
+  email        String     @unique
+  passwordHash String
+  role         Role
+  accounts     Account[]
+  actions      CsAction[]
+}
+
+model Account {
+  id        String   @id
+  name      String
+  segment   String
+  plan      Plan
+  vehicles  Int
+  mrr       Int
+  city      String
+  createdAt DateTime
+  csmId     String
+  csm       User     @relation(fields: [csmId], references: [id])
+
+  contracts Contract[]
+  usage     UsageEvent[]
+  tickets   Ticket[]
+  nps       NpsResponse[]
+  invoices  Invoice[]
+  actions   CsAction[]
+
+  @@index([csmId])
+  @@index([segment])
+}
+
+model Contract {
+  id        String   @id @default(cuid())
+  accountId String
+  account   Account  @relation(fields: [accountId], references: [id], onDelete: Cascade)
+  startDate DateTime
+  endDate   DateTime
+  mrr       Int
+
+  @@index([accountId, endDate])
+}
+
+/// Uso agregado por dia e módulo (não por clique individual): ver ADR-004.
+model UsageEvent {
+  id        Int      @id @default(autoincrement())
+  accountId String
+  account   Account  @relation(fields: [accountId], references: [id], onDelete: Cascade)
+  date      DateTime
+  module    String
+  count     Int
+
+  @@index([accountId, date])
+}
+
+model Ticket {
+  id         Int            @id @default(autoincrement())
+  accountId  String
+  account    Account        @relation(fields: [accountId], references: [id], onDelete: Cascade)
+  openedAt   DateTime
+  resolvedAt DateTime?
+  category   String
+  severity   TicketSeverity
+  title      String
+
+  @@index([accountId, openedAt])
+}
+
+model NpsResponse {
+  id        Int      @id @default(autoincrement())
+  accountId String
+  account   Account  @relation(fields: [accountId], references: [id], onDelete: Cascade)
+  date      DateTime
+  score     Int
+
+  @@index([accountId, date])
+}
+
+model Invoice {
+  id        Int       @id @default(autoincrement())
+  accountId String
+  account   Account   @relation(fields: [accountId], references: [id], onDelete: Cascade)
+  dueDate   DateTime
+  paidAt    DateTime?
+  amount    Int
+
+  @@index([accountId, dueDate])
+}
+
+model CsAction {
+  id          Int           @id @default(autoincrement())
+  accountId   String
+  account     Account       @relation(fields: [accountId], references: [id], onDelete: Cascade)
+  userId      String
+  user        User          @relation(fields: [userId], references: [id])
+  createdAt   DateTime      @default(now())
+  channel     ActionChannel
+  playbook    String?
+  note        String
+  outcome     ActionOutcome
+  scoreAtTime Float?
+  colorAtTime String?
+
+  @@index([accountId, createdAt])
+}
+
+/// Configuração única do score (linha "default"). Pesos e limites em JSON validado por Zod.
+model ScoreConfigRow {
+  id        String   @id @default("default")
+  weights   Json
+  thresholds Json
+  updatedAt DateTime @updatedAt
+  updatedBy String?
+}
