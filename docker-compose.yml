@@ -1,0 +1,20 @@
+# Apenas o PostgreSQL. A aplicação roda com `npm run dev` (ver README).
+services:
+  db:
+    image: postgres:16
+    container_name: termometro-db
+    environment:
+      POSTGRES_USER: termometro
+      POSTGRES_PASSWORD: termometro
+      POSTGRES_DB: termometro
+    ports:
+      - "5440:5432"
+    volumes:
+      - termometro-data:/var/lib/postgresql/data
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U termometro -d termometro"]
+      interval: 3s
+      timeout: 3s
+      retries: 20
+volumes:
+  termometro-data:
