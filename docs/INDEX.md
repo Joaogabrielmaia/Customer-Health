@@ -49,7 +49,7 @@ Estudo de caso **Termômetro / Frota Leve**. Dados sintéticos; reuniões simula
 - [Vitrine: currículo, LinkedIn, respostas de 30 s e 2 min](vitrine/README.md)
 
 ## Prints
-- [`screenshots/`](screenshots/) (00 a 12) · [`screenshots/powerbi/`](screenshots/powerbi/) *(ainda vazia: o relatório do Power BI não foi montado)*
+- [`screenshots/`](screenshots/) (00 a 13) · [`screenshots/powerbi/`](screenshots/powerbi/) *(ainda vazia: o relatório do Power BI não foi montado)*
 
 ## Power BI
 - [Guia, modelo de dados e DAX](../powerbi/README.md)

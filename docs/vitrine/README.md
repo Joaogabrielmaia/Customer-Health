@@ -4,7 +4,7 @@ Material para currículo, LinkedIn e entrevista. Todos os números são da execu
 
 ## 3 bullets para o currículo
 - Projetei e implementei o **Termômetro**, painel de saúde de clientes para um SaaS fictício (Next.js, TypeScript, Prisma, PostgreSQL), com score 0–100 em 6 dimensões, explicação por conta, playbooks de CS e priorização por urgência (risco × valor × renovação).
-- Documentei a metodologia do score com **análise de sensibilidade** sobre 22 cenários em 120 contas sintéticas e testei o modelo com **71 testes unitários, 5 de integração e 13 E2E (Playwright)**, assumindo e registrando as limitações de uma heurística.
+- Documentei a metodologia do score com **análise de sensibilidade** sobre 22 cenários em 120 contas sintéticas e testei o modelo com **76 testes unitários, 5 de integração e 14 E2E (Playwright)**, assumindo e registrando as limitações de uma heurística.
 - Conduzi o ciclo completo de um estudo de caso de Customer Success: discovery com reuniões simuladas, requisitos rastreáveis, ADRs, sprints, retrospectiva e evolução v1.1 (alerta de queda brusca), além de modelo e medidas DAX para Power BI.
 
 ## Post de LinkedIn
@@ -33,4 +33,4 @@ Fiz o discovery com três reuniões simuladas, em que o Claude interpretou a lí
 
 O score tem seis dimensões (adoção, engajamento, suporte, satisfação, financeiro e contrato), com pesos configuráveis e regra para dado ausente. Fiz uma análise de sensibilidade: a ordem das contas é estável, mas a cor é sensível aos limites, então recomendo priorizar pela urgência.
 
-Implementei em Next.js, TypeScript, Prisma e PostgreSQL, com 71 testes unitários, 5 de integração e 13 E2E, e entreguei uma v1.1 com alerta de queda brusca. Recusei mostrar 'chance de cancelar em %' porque não tenho histórico real para isso. Os dados são sintéticos e eu digo isso no README; o próximo passo real seria calibrar o score com dados de cancelamento de verdade."
+Implementei em Next.js, TypeScript, Prisma e PostgreSQL, com 76 testes unitários, 5 de integração e 14 E2E, e entreguei uma v1.1 com alerta de queda brusca. Recusei mostrar 'chance de cancelar em %' porque não tenho histórico real para isso. Os dados são sintéticos e eu digo isso no README; o próximo passo real seria calibrar o score com dados de cancelamento de verdade."

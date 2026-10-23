@@ -33,7 +33,7 @@ Respostas em primeira pessoa, curtas, prontas para falar. Os números citados v�
 3. **O que foi mais difícil?** Calibrar o gerador para ter uma carteira com as três cores sem fingir que isso valida o modelo.
 
 ## Fase 6 · Qualidade
-1. **Quais testes você tem?** 71 unitários, 5 de integração com PostgreSQL real, 13 E2E com Playwright, lint e typecheck, todos executados e registrados.
+1. **Quais testes você tem?** 76 unitários, 5 de integração com PostgreSQL real, 14 E2E com Playwright, lint e typecheck, todos executados e registrados.
 2. **Um bug que os testes acharam?** Chamados do gerador com data no futuro; o teste que verifica "nenhum evento depois da data de referência" falhou na primeira rodada.
 3. **O que não está coberto?** Não medi cobertura percentual, não rodei auditoria de acessibilidade e não fiz teste de carga. Está declarado na documentação.
 

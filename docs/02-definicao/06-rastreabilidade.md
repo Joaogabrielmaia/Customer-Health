@@ -17,4 +17,5 @@ Do pedido ao teste e à tela. Os testes citados existem e rodam (ver [resultados
 | RF-11 | HU-08 | — | `src/lib/score/sensitivity.ts`, `sensibilidade/page.tsx`, `scripts/sensitivity.ts` | unit "sensibilidade"; E2E "tela de sensibilidade" | [09](../screenshots/09-sensibilidade.png) |
 | RF-12 | HU-09 | — | `src/app/api/export/route.ts`, `src/lib/csv.ts` | unit "CSV"; E2E exportação (3) | [10](../screenshots/10-exportacao-csv.png) |
 | RF-13 | HU-11 | RN-16 | `scripts/seed/*` | unit "gerador sintético" (6); integração (persistência) | — |
+| RF-14 | HU-12 | RN-17 | `src/lib/score/alerts.ts`, `alertas/page.tsx`, banner em `page.tsx` | `alerts.test.ts` (5); E2E "alertas de queda brusca" | [13](../screenshots/13-alertas-queda-brusca.png) |
 | RNF-03 | HU-10 | — | layout responsivo (Tailwind) | E2E "mobile" | [11](../screenshots/11-mobile-painel.png), [12](../screenshots/12-mobile-conta.png) |

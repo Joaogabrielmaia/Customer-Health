@@ -2,7 +2,16 @@
 
 Formato baseado em [Keep a Changelog](https://keepachangelog.com/pt-BR/1.1.0/) e versionamento semântico.
 
-## [1.0.0] · MVP
+## [1.1.0] · 2026-10-23
+### Adicionado
+- Alerta de queda brusca de score: contas que perderam 15 pontos ou mais em 30 dias, com a dimensão que mais pesou (RF-14, HU-12, RN-17).
+- Página `/alertas`, banner no painel executivo e item "Alertas" na navegação.
+- 5 testes unitários, 1 E2E e 1 print novo (13-alertas-queda-brusca).
+
+### Alterado
+- Prints do painel atualizados com o banner.
+
+## [1.0.0] · 2026-10-23 · MVP
 ### Adicionado
 - Modelo de dados (contas, usuários, uso, chamados, NPS, faturas, contratos, ações, configuração) e migração inicial (RF-13).
 - Gerador de dados sintéticos com semente fixa (RF-13).

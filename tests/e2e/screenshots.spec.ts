@@ -44,6 +44,10 @@ test.describe("@screenshots prints para a documentação", () => {
     await expect(page.getByText("Efeito da simulação")).toBeVisible();
     await shot(page, "08-configuracao-de-pesos.png");
 
+    await page.goto("/alertas");
+    await expect(page.getByTestId("alerts-summary")).toBeVisible();
+    await shot(page, "13-alertas-queda-brusca.png");
+
     await page.goto("/sensibilidade");
     await expect(page.getByTestId("sensitivity-table")).toBeVisible();
     await shot(page, "09-sensibilidade.png");
