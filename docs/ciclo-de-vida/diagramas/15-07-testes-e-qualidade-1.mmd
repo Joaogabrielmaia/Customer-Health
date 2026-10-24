@@ -1,0 +1,6 @@
+flowchart TB
+    E2E["Ponta a ponta (Playwright, Chromium): 14 testes<br/>fluxos de acesso, painel, ação, configuração, CSV, sensibilidade, alertas, mobile"]
+    INT["Integração (Vitest e PostgreSQL real): 5 testes<br/>persistência, papéis, integridade referencial"]
+    UNI["Unitários (Vitest): 76 testes<br/>dimensões, agregação, cores, urgência, explicação, gerador, sensibilidade, playbooks, CSV, alertas"]
+    STA["Estática: ESLint e tsc --noEmit"]
+    E2E --- INT --- UNI --- STA

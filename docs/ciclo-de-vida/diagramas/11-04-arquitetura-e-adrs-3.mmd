@@ -1,0 +1,24 @@
+sequenceDiagram
+    actor CSM
+    participant MW as middleware
+    participant PG as Página /risco
+    participant SC as lib/scored
+    participant DT as lib/data
+    participant DB as PostgreSQL
+    participant CR as Núcleo do score
+    participant SA as Server Action
+    CSM->>MW: abre /risco
+    MW->>MW: valida o JWT do cookie
+    MW->>PG: sessão válida
+    PG->>SC: getScoredPortfolio()
+    SC->>DT: loadPortfolio() e loadConfig()
+    DT->>DB: contas, uso, chamados, NPS, faturas e configuração
+    DB-->>DT: linhas
+    SC->>CR: scorePortfolio(dados, data de referência, pesos)
+    CR-->>SC: score, cor, variação de 30 dias e urgência por conta
+    SC-->>PG: contas pontuadas
+    PG-->>CSM: lista ordenada por urgência
+    CSM->>PG: abre a conta e registra a ação
+    PG->>SA: registerAction
+    SA->>CR: computeScore da conta
+    SA->>DB: grava a ação com scoreAtTime e colorAtTime

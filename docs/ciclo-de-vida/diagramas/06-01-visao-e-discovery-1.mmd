@@ -1,0 +1,15 @@
+flowchart LR
+    subgraph ASIS["AS-IS: decisão por memória"]
+        A1[CSM abre a planilha própria] --> A2{Algum cliente reclamou?}
+        A2 -- sim --> A3[Contata quem reclamou]
+        A2 -- não --> A4{Renovação próxima?}
+        A4 -- sim --> A5[Contata e propõe renovação]
+        A4 -- não --> A6[Contata o cliente que sente sumido]
+    end
+    subgraph TOBE["TO-BE: decisão por score e urgência"]
+        B1[CSM abre Contas em risco] --> B2[Lista ordenada por urgência]
+        B2 --> B3[Abre a conta e lê Por que este score?]
+        B3 --> B4[Aplica o playbook sugerido]
+        B4 --> B5[Registra a ação]
+    end
+    ASIS -. substituído por .-> TOBE

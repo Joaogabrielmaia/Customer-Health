@@ -1,0 +1,74 @@
+erDiagram
+    USER ||--o{ ACCOUNT : "é CSM de"
+    USER ||--o{ CS_ACTION : registra
+    ACCOUNT ||--o{ CONTRACT : possui
+    ACCOUNT ||--o{ USAGE_EVENT : gera
+    ACCOUNT ||--o{ TICKET : abre
+    ACCOUNT ||--o{ NPS_RESPONSE : responde
+    ACCOUNT ||--o{ INVOICE : recebe
+    ACCOUNT ||--o{ CS_ACTION : recebe
+    USER {
+        string id PK
+        string email UK
+        string passwordHash
+        enum role "ADMIN | CSM"
+    }
+    ACCOUNT {
+        string id PK
+        string name
+        string segment
+        enum plan "BASICO | PROFISSIONAL | FROTA_PLUS"
+        int vehicles
+        int mrr
+        datetime createdAt
+        string csmId FK
+    }
+    CONTRACT {
+        string id PK
+        string accountId FK
+        datetime startDate
+        datetime endDate
+        int mrr
+    }
+    USAGE_EVENT {
+        int id PK
+        string accountId FK
+        datetime date
+        string module
+        int count
+    }
+    TICKET {
+        int id PK
+        string accountId FK
+        datetime openedAt
+        datetime resolvedAt "nulo = aberto"
+        string category
+        enum severity "LOW | MEDIUM | HIGH"
+    }
+    NPS_RESPONSE {
+        int id PK
+        string accountId FK
+        datetime date
+        int score
+    }
+    INVOICE {
+        int id PK
+        string accountId FK
+        datetime dueDate
+        datetime paidAt "nulo = não paga"
+        int amount
+    }
+    CS_ACTION {
+        int id PK
+        string accountId FK
+        string userId FK
+        enum channel
+        enum outcome
+        float scoreAtTime
+        string colorAtTime
+    }
+    SCORE_CONFIG_ROW {
+        string id PK "default"
+        json weights
+        json thresholds
+    }

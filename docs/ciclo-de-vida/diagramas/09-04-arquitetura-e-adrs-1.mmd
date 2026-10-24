@@ -1,0 +1,9 @@
+flowchart LR
+    CSM([CSM]) -->|usa no navegador| T
+    ADM([Admin: líder de CS]) -->|usa e configura pesos| T
+    subgraph T["Termômetro"]
+        APP[Aplicação web]
+    end
+    T -->|lê e grava| DB[(PostgreSQL)]
+    GER[Gerador de dados sintéticos] -->|popula| DB
+    T -->|CSV de carteira, histórico e ações| PBI[Power BI Desktop<br/>importação manual]

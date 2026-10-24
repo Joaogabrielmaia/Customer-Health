@@ -1,0 +1,6 @@
+flowchart LR
+    NAV[Navegador] --> APP[Next.js: páginas e Server Actions]
+    APP --> CORE[Núcleo puro do score]
+    APP --> DB[(PostgreSQL)]
+    GER[Gerador sintético] --> DB
+    APP -->|CSV| PBI[Power BI]

@@ -47,6 +47,9 @@ Guia da série sobre o Termômetro, um estudo de caso de Customer Success com em
 | 5 · Qualidade | [05-qualidade](05-qualidade/README.md) | Plano, resultados dos testes, aceitação e revisões de sprint. |
 | 6 · Pós-lançamento | [06-pos-lancamento](06-pos-lancamento/README.md) | Retrospectiva, roadmap, v1.1 e retrospectiva final. |
 
+## Ciclo de vida
+- [Relatório do ciclo de vida](ciclo-de-vida/README.md): visão, Scrum e sprints, requisitos, arquitetura, dados, desenvolvimento, testes, implantação, evolução e regras do score.
+
 ## Galeria
 - [Galeria dos 14 prints](screenshots/README.md), na ordem do fluxo de uso.
 
