@@ -217,6 +217,4 @@ Evolução prevista, detalhada no [roadmap](docs/06-pos-lancamento/02-roadmap.md
 
 ## Nota de contexto acadêmico
 
-Este material integra um estudo de caso. A empresa (Frota Leve), as pessoas, os dados de uso, chamados, NPS e faturas, as atas de reunião, o calendário de sprints e as cerimônias de planejamento foram elaborados para compor o cenário de aprendizagem. Datas de sprint e de reunião são do cenário; as datas de commits, tags, testes e logs são as registradas no Git e nos arquivos de execução. Não há cliente real, operação real, implantação nem indicador de negócio medido.
-
-Registro de uso de IA: parte do cenário (as atas simuladas, os registros de planejamento e a redação da documentação) foi elaborada com apoio de IA generativa. O código, os testes e os resultados de execução citados nas evidências são verificáveis no repositório, com commit e data.
+Este repositório é um estudo de caso. A Rota Fácil Software, as pessoas, os clientes e os dados são fictícios. Reuniões, atas, o cronograma das sprints e as cerimônias foram elaborados para compor o cenário de aprendizagem, com participantes identificados por papel; Houve uso de IA generativa (Claude, da Anthropic) na construção do cenário, incluindo a simulação das reuniões, e como apoio ao desenvolvimento e à documentação. O modelo do cenário, as decisões de escopo e de arquitetura e a verificação dos resultados foram definidos e conferidos pelo autor. Os resultados de testes e de CI citados vêm de execuções registradas e não são resultados ilustrativos.
