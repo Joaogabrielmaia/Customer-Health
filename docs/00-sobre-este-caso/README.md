@@ -4,7 +4,7 @@ A Frota Leve é uma empresa fictícia de gestão de frotas, com 120 clientes e u
 
 | Documento | O que contém | Itens |
 |---|---|---|
-| [Sobre este caso](#sobre-este-caso) | O que é o Termômetro, o cenário da Frota Leve e a tabela "Real × simulado" | 8 linhas na tabela |
+| [Sobre este caso](#sobre-este-caso) | O que é o Termômetro, o cenário da Frota Leve e a tabela "Real × simulado" | 6 linhas na tabela |
 | [Dados sintéticos](dados-sinteticos.md) | Como o gerador cria as contas, a calibragem e o volume gerado | 8 arquétipos; 41.578 registros de uso, 504 chamados, 184 NPS, 805 faturas, 64 ações |
 
 [← README](../../README.md) · [Índice](../INDEX.md) · [Episódio 1 →](../01-discovery/README.md)
@@ -29,12 +29,10 @@ Um painel que mostra a saúde de cada cliente de um SaaS (verde, amarelo e verme
 |---|---|
 | Empresa, pessoas e clientes | Fictícios, com nomes brasileiros comuns. Não há marcas nem pessoas reais. |
 | Dados de uso, chamados, NPS e faturas | Sintéticos, de um gerador com semente fixa: [dados-sinteticos.md](dados-sinteticos.md). |
-| Reuniões, entrevistas e validações | Simuladas, com o Claude no papel das pessoas. Cada registro abre com a linha `Reunião simulada; pessoas e empresa fictícias.` |
+| Reuniões, entrevistas e validações | Simuladas. Cada registro abre com a linha `Reunião simulada; pessoas e empresa fictícias.` |
 | Operação | Não existe cliente real, operação real nem ambiente de produção. |
 | Score | É uma **heurística**. Teste em dado sintético é rotulado como tal e nunca como acerto de churn. |
 | Resultados de testes, tempos e distribuições | Executados e copiados da saída real. Ganhos esperados aparecem como **hipóteses**. |
-| Execução | Local (Docker Compose para o banco). As provas são prints e documentos. |
-| Segredos | `.env` fica fora do repositório; só `.env.example` é versionado. |
 
 ## Como o discovery foi feito
 

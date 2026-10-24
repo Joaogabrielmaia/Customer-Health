@@ -51,4 +51,4 @@ npm run db:up      # sobe o PostgreSQL
 npm run db:migrate # aplica as migrações
 npm run db:seed    # limpa e recria os dados (idempotente)
 ```
-Senha de demonstração dos usuários fictícios: ver o [README](../../README.md#rodar-localmente).
+Senha de demonstração dos usuários fictícios: ver o [README](../../CONTRIBUTING.md).
