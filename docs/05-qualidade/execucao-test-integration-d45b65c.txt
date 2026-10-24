@@ -1,0 +1,24 @@
+Data: 2026-10-24T13:21:10Z
+Commit: d45b65c
+Node: v24.14.0
+Comando: npm run test:integration
+------------------------------------------------------------
+
+> termometro-customer-health@1.1.0 test:integration
+> vitest run tests/integration
+
+[33mThe CJS build of Vite's Node API is deprecated. See https://vite.dev/guide/troubleshooting.html#vite-cjs-node-api-deprecated for more details.[39m
+
+[1m[7m[36m RUN [39m[27m[22m [36mv2.1.9 [39m[90mC:/Users/Joaog/Downloads/Customer-Health[39m
+
+ [32m✓[39m tests/integration/db.test.ts [2m([22m[2m5 tests[22m[2m)[22m[33m 1751[2mms[22m[39m
+   [33m[2m✓[22m[39m integração com o PostgreSQL (requer `npm run db:up` e `npm run db:seed`)[2m > [22mo score calculado a partir do banco é idêntico ao calculado a partir do gerador (persistência sem perdas) [33m1095[2mms[22m[39m
+   [33m[2m✓[22m[39m integração com o PostgreSQL (requer `npm run db:up` e `npm run db:seed`)[2m > [22mpapéis: 1 admin e 3 CSMs; senha de demonstração confere com o hash [33m321[2mms[22m[39m
+
+[2m Test Files [22m [1m[32m1 passed[39m[22m[90m (1)[39m
+[2m      Tests [22m [1m[32m5 passed[39m[22m[90m (5)[39m
+[2m   Start at [22m 10:21:13
+[2m   Duration [22m 4.00s[2m (transform 412ms, setup 0ms, collect 569ms, tests 1.75s, environment 1ms, prepare 1.06s)[22m
+
+------------------------------------------------------------
+Código de saída: 0

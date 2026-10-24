@@ -19,7 +19,7 @@ Termos e siglas (MRR, Spearman, playbook, QBR): [glossário](docs/GLOSSARIO.md).
 | Discovery | Reuniões simuladas, marcadas nas atas |
 | Dados | Sintéticos, gerados por script com semente fixa |
 | Stack | Next.js e TypeScript (aplicação web), Prisma e PostgreSQL (banco de dados), Vitest e Playwright (testes) |
-| Testes | 76 unitários, 5 de integração e 14 de ponta a ponta (E2E) na v1.1.0 (tag `v1.1.0`, commit `ede71b7`, changelog de 2026-10-23); revalidação de 2026-10-24 no commit `ebbe1dd`: unitários e integração passaram, o E2E não executou ([logs](docs/05-qualidade/README.md)) |
+| Testes | 76 unitários, 5 de integração e 14 de ponta a ponta (E2E) na v1.1.0 (tag `v1.1.0`, commit `ede71b7`, changelog de 2026-10-23); revalidação de 2026-10-24 (commits `d45b65c` e `4598c4c`): os três grupos passaram ([logs](docs/05-qualidade/README.md)) |
 | Execução | Local; não hospedado |
 
 ## Duas entradas
@@ -46,7 +46,9 @@ Termos e siglas (MRR, Spearman, playbook, QBR): [glossário](docs/GLOSSARIO.md).
 </tr>
 </table>
 
-Os 14 prints, na ordem do fluxo de uso, estão na [galeria](docs/screenshots/README.md).
+![Gravação do fluxo: painel executivo, contas em risco, conta Cargas Martins com "Por que este score?", playbooks e registro de ação](docs/screenshots/demo-conta-em-risco.gif)
+
+Fluxo real gravado no app local (23 s, sem narração): painel executivo, contas em risco, a conta mais urgente com "Por que este score?" e os playbooks, e o registro de uma ação. Os 14 prints, na ordem do fluxo de uso, estão na [galeria](docs/screenshots/README.md).
 
 ## O problema
 
@@ -103,7 +105,7 @@ Guia completo e trilhas de 2, 10 e 30 minutos: [docs/INDEX.md](docs/INDEX.md). T
 ## Evidências
 
 - **Testes na v1.1.0** (tag `v1.1.0`, commit `ede71b7`, changelog de 2026-10-23): 76 unitários, 5 de integração e 14 E2E passando ([plano e resultados](docs/05-qualidade/01-plano-e-resultados.md)).
-- **Revalidação de 2026-10-24** (commit `ebbe1dd`): 76 unitários e 5 de integração passaram; lint e typecheck sem erro; o E2E não executou porque a porta 3100 estava ocupada ([logs](docs/05-qualidade/README.md)).
+- **Revalidação de 2026-10-24**: 76 unitários e 5 de integração passaram (commit `d45b65c`), lint e typecheck sem erro, e os 14 E2E passaram na porta 3101 (commit `4598c4c`). Uma primeira tentativa falhou por porta ocupada; o log foi mantido ([logs](docs/05-qualidade/README.md)).
 - **Sensibilidade**: Spearman de 0,936 a 0,998 nos cenários de peso; deslocar os limites de cor em 5 pontos muda a cor de 19 ou de 11 contas ([resultados](docs/03-metodologia-do-score/sensibilidade-resultados.md)).
 - **Alertas**: 19 contas em queda brusca na semente padrão, 2 delas ainda saudáveis. Descreve o dado sintético, não o alerta com cancelamento real ([PR da v1.1](docs/06-pos-lancamento/03-pr-v1.1-alerta-queda-brusca.md)).
 

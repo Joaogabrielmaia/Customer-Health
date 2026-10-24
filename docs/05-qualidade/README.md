@@ -10,19 +10,21 @@ Rodei lint, tipos, testes unitários, de integração e E2E, e copiei a saída r
 
 ## Logs da revalidação
 
-Em 2026-10-24 reexecutei os comandos sobre o commit `ebbe1dd`, cujo código (`src`, `scripts`, `tests`, `prisma`) é idêntico ao da tag `v1.1.0`. Cada arquivo traz data, commit, versão do Node, comando e saída. Os registros antigos do plano de resultados não foram alterados.
+Em 2026-10-24 reexecutei os comandos. O código (`src`, `scripts`, `tests`, `prisma`) é idêntico ao da tag `v1.1.0`; a única mudança de código está em `playwright.config.ts`, que passou a ler a porta de `PORT` (padrão 3100). Cada arquivo traz data, commit, versão do Node, comando e saída. Os registros antigos do plano de resultados não foram alterados.
 
-| Comando | Resultado | Log |
-|---|---|---|
-| `npm run db:up` | saída 0 | [log](execucao-db-up-ebbe1dd.txt) |
-| `npm run db:migrate` | saída 0 | [log](execucao-db-migrate-ebbe1dd.txt) |
-| `npm run db:seed` | saída 0; 120 contas, 41.578 eventos de uso, 504 chamados, 184 NPS, 805 faturas, 64 ações | [log](execucao-db-seed-ebbe1dd.txt) |
-| `npm run lint` | saída 0 | [log](execucao-lint-ebbe1dd.txt) |
-| `npm run typecheck` | saída 0 | [log](execucao-typecheck-ebbe1dd.txt) |
-| `npm test` | 4 arquivos, 76 testes passando | [log](execucao-test-ebbe1dd.txt) |
-| `npm run test:integration` | 1 arquivo, 5 testes passando | [log](execucao-test-integration-ebbe1dd.txt) |
-| `npm run test:e2e` | **não executou**: a porta 3100 estava ocupada por outro servidor local (`EADDRINUSE`) e o Playwright não subiu o servidor do projeto | [log](execucao-test-e2e-ebbe1dd.txt) |
+| Comando | Resultado | Commit | Log |
+|---|---|---|---|
+| `npm run db:up` | saída 0 | `ebbe1dd` | [log](execucao-db-up-ebbe1dd.txt) |
+| `npm run db:migrate` | saída 0 | `ebbe1dd` | [log](execucao-db-migrate-ebbe1dd.txt) |
+| `npm run db:seed` | saída 0; 120 contas, 41.578 eventos de uso, 504 chamados, 184 NPS, 805 faturas, 64 ações | `ebbe1dd` | [log](execucao-db-seed-ebbe1dd.txt) |
+| `npm run lint` | saída 0 | `d45b65c` | [log](execucao-lint-d45b65c.txt) |
+| `npm run typecheck` | saída 0 | `d45b65c` | [log](execucao-typecheck-d45b65c.txt) |
+| `npm test` | 4 arquivos, 76 testes passando | `d45b65c` | [log](execucao-test-d45b65c.txt) |
+| `npm run test:integration` | 1 arquivo, 5 testes passando | `d45b65c` | [log](execucao-test-integration-d45b65c.txt) |
+| `npm run test:e2e` (porta 3101) | 14 testes passando em 3,7 min | `4598c4c` | [log](execucao-e2e-4598c4c.txt) |
 
-Os 14 testes E2E da v1.1.0 seguem como registro em texto no [plano de resultados](01-plano-e-resultados.md), sem log arquivado. Não rodei `npm run screenshots` nem `npm run sensitivity`, porque os dois sobrescrevem evidências já versionadas.
+A primeira tentativa de E2E, no commit `ebbe1dd`, não executou: a porta 3100 estava ocupada por outro servidor local (`EADDRINUSE`) e o Playwright não subiu o servidor do projeto. O [log da falha](execucao-test-e2e-ebbe1dd.txt) foi mantido. A correção foi fazer a configuração do Playwright ler a porta de `PORT`, e a segunda tentativa usou `PORT=3101`.
+
+Não rodei `npm run screenshots` nem `npm run sensitivity`, porque os dois sobrescrevem evidências já versionadas.
 
 [← Episódio 4](../04-arquitetura/README.md) · [Índice](../INDEX.md) · [Episódio 6 →](../06-pos-lancamento/README.md)
