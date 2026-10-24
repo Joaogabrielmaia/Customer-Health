@@ -1,0 +1,12 @@
+Data: 2026-10-24T03:50:08Z
+Commit: ebbe1dd
+Node: v24.14.0
+Comando: npm run db:seed
+------------------------------------------------------------
+
+> termometro-customer-health@1.1.0 db:seed
+> tsx scripts/seed/index.ts
+
+Seed 20261015 / ref 2026-10-15: 120 contas, 41578 eventos de uso, 504 chamados, 184 NPS, 805 faturas, 64 ações.
+------------------------------------------------------------
+Código de saída: 0

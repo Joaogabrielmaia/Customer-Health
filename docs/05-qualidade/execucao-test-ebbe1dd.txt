@@ -1,0 +1,27 @@
+Data: 2026-10-24T03:50:35Z
+Commit: ebbe1dd
+Node: v24.14.0
+Comando: npm run test
+------------------------------------------------------------
+
+> termometro-customer-health@1.1.0 test
+> vitest run tests/unit
+
+[33mThe CJS build of Vite's Node API is deprecated. See https://vite.dev/guide/troubleshooting.html#vite-cjs-node-api-deprecated for more details.[39m
+
+[1m[7m[36m RUN [39m[27m[22m [36mv2.1.9 [39m[90mC:/Users/Joaog/Downloads/Customer-Health[39m
+
+ [32m✓[39m tests/unit/dimensions.test.ts [2m([22m[2m34 tests[22m[2m)[22m[90m 29[2mms[22m[39m
+ [32m✓[39m tests/unit/engine.test.ts [2m([22m[2m20 tests[22m[2m)[22m[90m 57[2mms[22m[39m
+ [32m✓[39m tests/unit/alerts.test.ts [2m([22m[2m5 tests[22m[2m)[22m[33m 345[2mms[22m[39m
+   [33m[2m✓[22m[39m alerta de queda brusca (RN-17)[2m > [22mno conjunto sintético, só entram contas com queda de 15+ pontos [33m321[2mms[22m[39m
+ [32m✓[39m tests/unit/system.test.ts [2m([22m[2m17 tests[22m[2m)[22m[33m 1549[2mms[22m[39m
+   [33m[2m✓[22m[39m tendência semanal[2m > [22mdevolve 12 pontos e contagens que somam as contas existentes [33m1165[2mms[22m[39m
+
+[2m Test Files [22m [1m[32m4 passed[39m[22m[90m (4)[39m
+[2m      Tests [22m [1m[32m76 passed[39m[22m[90m (76)[39m
+[2m   Start at [22m 00:50:37
+[2m   Duration [22m 8.66s[2m (transform 866ms, setup 0ms, collect 5.62s, tests 1.98s, environment 2ms, prepare 6.84s)[22m
+
+------------------------------------------------------------
+Código de saída: 0
