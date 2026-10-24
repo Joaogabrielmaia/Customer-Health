@@ -23,7 +23,3 @@ Escrevo em primeira pessoa, olhando o projeto inteiro depois da v1.1.0.
 - Calibração com **dados reais**: o único passo que transforma o score de heurística em algo defensável.
 - Histórico versionado de configurações, zona cinzenta na cor, QBR por conta, alertas por e-mail ([roadmap](02-roadmap.md)).
 - O relatório do Power BI: entreguei CSVs, modelo e DAX, mas **eu ainda preciso montar o relatório e tirar os prints**.
-- A seção do README sobre a minha experiência real com clientes e suporte, que é minha e não pode ser escrita por mim em nome de ninguém.
-
-## Como eu apresentaria isto numa entrevista
-Em dois minutos: o problema (descobrir tarde que o cliente esfriou), a decisão (painel explicável), um conflito (número × contexto) e como o resolvi, uma recusa justificada e um resultado honesto da análise de sensibilidade. E, de propósito, a limitação: dados sintéticos e heurística.

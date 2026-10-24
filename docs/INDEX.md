@@ -1,55 +1,57 @@
-# Índice da documentação
+# Como saber qual cliente esfriou, e por quê
 
-Estudo de caso **Termômetro / Frota Leve**. Dados sintéticos; reuniões simuladas. Voltar ao [README](../README.md).
+Guia da série sobre o Termômetro, um estudo de caso de Customer Success com empresa, pessoas e dados fictícios. A série segue o trabalho em seis episódios, do problema à evolução depois da primeira versão. Voltar ao [README](../README.md). Termos e siglas: [glossário](GLOSSARIO.md).
 
-## 00 · Sobre este caso
-- [Sobre este caso e regras de integridade](00-sobre-este-caso/README.md)
-- [Dados sintéticos](00-sobre-este-caso/dados-sinteticos.md)
+## Trilhas de leitura
 
-## 01 · Discovery
-- [Brainstorm e matriz de decisão](01-discovery/01-brainstorm-e-decisao.md)
-- [O negócio: Frota Leve](01-discovery/02-negocio-frota-leve.md)
-- [Reunião 1: líder de CS](01-discovery/03-reuniao-lider-de-cs.md) *(simulada)*
-- [Reunião 2: CSM](01-discovery/04-reuniao-csm.md) *(simulada)*
-- [Reunião 3, processo AS-IS e definições](01-discovery/05-processo-as-is-e-definicoes.md) *(simulada)*
+### Em 2 minutos
+1. [README](../README.md)
+2. [Painel executivo](screenshots/01-painel-executivo.png)
+3. [Explicação do score](screenshots/04-explicacao-do-score.png)
+4. [A recusa do "% de chance de cancelar"](04-arquitetura/04-wireframes-e-validacao.md)
 
-## 02 · Definição
-- [Requisitos (RF/RNF) e hipóteses de ganho](02-definicao/01-requisitos.md)
-- [Regras de negócio](02-definicao/02-regras-de-negocio.md)
-- [Histórias, critérios de aceite e MoSCoW](02-definicao/03-historias-e-moscow.md)
-- [Backlog em 3 sprints](02-definicao/04-backlog-sprints.md)
-- [Riscos](02-definicao/05-riscos.md)
-- [Rastreabilidade](02-definicao/06-rastreabilidade.md)
+### Em 10 minutos
+1. [README](../README.md)
+2. [Painel executivo](screenshots/01-painel-executivo.png)
+3. [Explicação do score](screenshots/04-explicacao-do-score.png)
+4. [A recusa do "% de chance de cancelar"](04-arquitetura/04-wireframes-e-validacao.md)
+5. [Reunião com a líder de CS (15 contatos por semana)](01-discovery/03-reuniao-lider-de-cs.md)
+6. [Metodologia do score](03-metodologia-do-score/README.md)
+7. [Sensibilidade](screenshots/09-sensibilidade.png)
+8. [Playbooks](screenshots/06-playbooks.png)
 
-## 03 · Metodologia do score
-- [Metodologia (documento central)](03-metodologia-do-score/README.md)
-- [Resultados da sensibilidade (gerado por script)](03-metodologia-do-score/sensibilidade-resultados.md)
+### Em 30 minutos
+1. [README](../README.md)
+2. [Painel executivo](screenshots/01-painel-executivo.png)
+3. [Explicação do score](screenshots/04-explicacao-do-score.png)
+4. [A recusa do "% de chance de cancelar"](04-arquitetura/04-wireframes-e-validacao.md)
+5. [Reunião com a líder de CS (15 contatos por semana)](01-discovery/03-reuniao-lider-de-cs.md)
+6. [Metodologia do score](03-metodologia-do-score/README.md)
+7. [Sensibilidade](screenshots/09-sensibilidade.png)
+8. [Playbooks](screenshots/06-playbooks.png)
+9. [Regras de negócio](02-definicao/02-regras-de-negocio.md)
+10. [Rastreabilidade](02-definicao/06-rastreabilidade.md)
+11. [ADRs](04-arquitetura/01-adrs.md)
+12. [Desempenho](04-arquitetura/05-desempenho.md)
+13. [Complemento Power BI](../powerbi/README.md)
 
-## 04 · Arquitetura
-- [ADRs](04-arquitetura/01-adrs.md)
-- [Modelo ER](04-arquitetura/02-modelo-er.md)
-- [Componentes](04-arquitetura/03-componentes.md)
-- [Wireframes e reunião de validação](04-arquitetura/04-wireframes-e-validacao.md) *(simulada)*
-- [Desempenho medido](04-arquitetura/05-desempenho.md)
+## Episódios
 
-## 05 · Qualidade
-- [Plano e resultados reais](05-qualidade/01-plano-e-resultados.md)
-- [Reunião de aceitação](05-qualidade/02-reuniao-de-aceitacao.md) *(simulada)*
-- [Sprint 1](05-qualidade/sprint-1-review.md) · [Sprint 2](05-qualidade/sprint-2-review.md) · [Sprint 3](05-qualidade/sprint-3-review.md)
+| Episódio | Pasta | O que acontece |
+|---|---|---|
+| 0 · Sobre este caso | [00-sobre-este-caso](00-sobre-este-caso/README.md) | O cenário, o que é real e o que é simulado, e como os dados sintéticos são gerados. |
+| 1 · Discovery | [01-discovery](01-discovery/README.md) | Brainstorm, negócio, três reuniões simuladas e o processo atual. |
+| 2 · Definição | [02-definicao](02-definicao/README.md) | Requisitos, regras de negócio, histórias, backlog, riscos e rastreabilidade. |
+| 3 · Metodologia do score | [03-metodologia-do-score](03-metodologia-do-score/README.md) | Fórmulas, pesos, limites, sensibilidade e limitações. |
+| 4 · Arquitetura | [04-arquitetura](04-arquitetura/README.md) | Decisões, modelo de dados, componentes, wireframes, validação e desempenho. |
+| 5 · Qualidade | [05-qualidade](05-qualidade/README.md) | Plano, resultados dos testes, aceitação e revisões de sprint. |
+| 6 · Pós-lançamento | [06-pos-lancamento](06-pos-lancamento/README.md) | Retrospectiva, roadmap, v1.1 e retrospectiva final. |
 
-## 06 · Pós-lançamento
-- [Reunião de retrospectiva](06-pos-lancamento/01-reuniao-de-retrospectiva.md) *(simulada)*
-- [Roadmap](06-pos-lancamento/02-roadmap.md)
-- [PR da v1.1: alerta de queda brusca](06-pos-lancamento/03-pr-v1.1-alerta-queda-brusca.md)
-- [Retrospectiva final](06-pos-lancamento/04-retrospectiva-final.md)
-- [CHANGELOG](../CHANGELOG.md)
+## Galeria
+- [Galeria dos 14 prints](screenshots/README.md), na ordem do fluxo de uso.
 
-## Entrevista e vitrine
-- [Perguntas de entrevista (3 por fase)](entrevista/README.md)
-- [Vitrine: currículo, LinkedIn, respostas de 30 s e 2 min](vitrine/README.md)
+## Complemento Power BI
+- [Guia, modelo de dados e medidas DAX](../powerbi/README.md). O repositório traz os CSVs e as medidas; o relatório não está incluído.
 
-## Prints
-- [`screenshots/`](screenshots/) (00 a 13) · [`screenshots/powerbi/`](screenshots/powerbi/) *(ainda vazia: o relatório do Power BI não foi montado)*
-
-## Power BI
-- [Guia, modelo de dados e DAX](../powerbi/README.md)
+## Glossário
+- [Glossário](GLOSSARIO.md)

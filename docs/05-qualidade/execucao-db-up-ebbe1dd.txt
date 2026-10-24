@@ -1,0 +1,14 @@
+Data: 2026-10-24T03:49:58Z
+Commit: ebbe1dd
+Node: v24.14.0
+Comando: npm run db:up
+------------------------------------------------------------
+
+> termometro-customer-health@1.1.0 db:up
+> docker compose up -d --wait
+
+ Container termometro-db Running 
+ Container termometro-db Waiting 
+ Container termometro-db Healthy 
+------------------------------------------------------------
+Código de saída: 0

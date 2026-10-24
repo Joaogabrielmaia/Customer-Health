@@ -1,6 +1,6 @@
 # 02 · Reunião de aceitação
 
-> Simulação: o Claude interpretou o cliente nesta conversa.
+> Reunião simulada; pessoas e empresa fictícias.
 
 **Participantes (fictícios):** Marcela Andrade (líder, Admin), Rafael Teixeira (CSM) e eu.
 **Formato:** demonstração do fluxo no sistema local com os dados sintéticos, seguida de checagem dos critérios de aceite. Os números citados vêm da [execução real](01-plano-e-resultados.md).
@@ -23,7 +23,7 @@
 | HU-05 | Playbook sugerido com mensagem | **Aceito** |
 | HU-06 | Registrar ação com validação | **Aceito** |
 | HU-07 | Simular, salvar, recusar limites inválidos, CSM sem permissão | **Aceito** |
-| HU-08 | Sensibilidade com 22 cenários | **Aceito** |
+| HU-08 | Sensibilidade com 21 cenários mais o caso-base | **Aceito** |
 | HU-09 | CSV com 120 linhas | **Aceito** |
 | HU-10 | Mobile sem rolagem horizontal da página | **Aceito** |
 | HU-11 | Dados reproduzíveis | **Aceito** |

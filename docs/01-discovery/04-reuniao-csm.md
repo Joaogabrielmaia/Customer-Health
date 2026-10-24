@@ -1,6 +1,6 @@
 # 04 · Reunião 2 — CSM
 
-> Simulação: o Claude interpretou o cliente nesta conversa.
+> Reunião simulada; pessoas e empresa fictícias.
 
 **Participantes (fictícios):** Rafael Teixeira (CSM, atende 40 contas) e eu.
 **Objetivo:** entender o dia a dia de quem executa e o que ele precisa para agir.
@@ -12,6 +12,8 @@
 **João:** A Marcela quer só o número. E você quer o porquê. Se eu mostrasse o número em destaque e abrisse o porquê ao clicar?
 
 **Rafael:** Serve, desde que o porquê seja rápido. Eu faço uns 12 contatos por dia. Se eu levar 10 minutos para entender cada conta, não uso.
+
+> Nota: o volume citado aqui (cerca de 12 contatos por dia) difere do da [reunião 1](03-reuniao-lider-de-cs.md) (cerca de 15 contatos por semana por CSM).
 
 **Rafael:** Também: não quero digitar dados. Já preencho a planilha, o CRM do comercial e o Slack. Se o sistema me pedir mais cadastro, abandono.
 

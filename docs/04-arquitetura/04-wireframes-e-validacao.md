@@ -21,6 +21,8 @@
 +--------------------------------------------------------------+
 ```
 
+Wireframe da v1.0; a v1.1 acrescenta Alertas.
+
 ### Contas em risco
 ```
 [Cor v] [Segmento v] [CSM v] [ ] Só minhas   [Filtrar] [Limpar]
@@ -42,7 +44,7 @@ O que fazer agora  -> playbooks disparados + modelo de mensagem [Copiar]
 
 ## Reunião simulada de validação
 
-> Simulação: o Claude interpretou o cliente nesta conversa.
+> Reunião simulada; pessoas e empresa fictícias.
 
 **Participantes (fictícios):** Marcela Andrade (líder, Admin), Rafael Teixeira (CSM) e eu. Mostrei os wireframes acima e o modelo de dados.
 

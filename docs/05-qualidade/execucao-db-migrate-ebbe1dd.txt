@@ -1,0 +1,19 @@
+Data: 2026-10-24T03:50:02Z
+Commit: ebbe1dd
+Node: v24.14.0
+Comando: npm run db:migrate
+------------------------------------------------------------
+
+> termometro-customer-health@1.1.0 db:migrate
+> prisma migrate deploy
+
+Environment variables loaded from .env
+Prisma schema loaded from prisma\schema.prisma
+Datasource "db": PostgreSQL database "termometro", schema "public" at "localhost:5440"
+
+1 migration found in prisma/migrations
+
+
+No pending migrations to apply.
+------------------------------------------------------------
+Código de saída: 0

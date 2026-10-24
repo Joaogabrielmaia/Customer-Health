@@ -1,0 +1,24 @@
+Data: 2026-10-24T03:51:02Z
+Commit: ebbe1dd
+Node: v24.14.0
+Comando: npm run test:e2e
+------------------------------------------------------------
+
+> termometro-customer-health@1.1.0 test:e2e
+> playwright test --grep-invert @screenshots
+
+[WebServer] Environment variables loaded from .env
+[WebServer]  ⨯ Failed to start server
+[WebServer] Error: listen EADDRINUSE: address already in use :::3100
+[WebServer]     at <unknown> (Error: listen EADDRINUSE: address already in use :::3100)
+[WebServer]     at new Promise (<anonymous>) {
+[WebServer]   code: 'EADDRINUSE',
+[WebServer]   errno: -4091,
+[WebServer]   syscall: 'listen',
+[WebServer]   address: '::',
+[WebServer]   port: 3100
+[WebServer] }
+Error: Process from config.webServer was not able to start. Exit code: 1
+
+------------------------------------------------------------
+Código de saída: 1
