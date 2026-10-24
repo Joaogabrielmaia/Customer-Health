@@ -46,7 +46,7 @@ Quatorze prints numerados, gerados com Playwright (`npm run screenshots`) sobre 
 ### 07 · Registro de ação
 ![Formulário "Registrar ação do CS" com canal, playbook, resultado e texto, a mensagem "Ação registrada." e a lista de três ações registradas](07-registro-de-acao.png)
 
-**O que se vê:** campos de canal (Ligação), playbook (Nenhum) e resultado (Em andamento), caixa de texto, a confirmação "Ação registrada." e a lista "Ações registradas (3)", em que a mais recente está datada de 23/10/2026 e mostra "Score na hora do registro: 27,6". · **Por que importa:** é o único registro manual do sistema, e cada ação grava o score e a cor do momento ([RN-15](../02-definicao/02-regras-de-negocio.md)).
+**O que se vê:** campos de canal (Ligação), playbook (Nenhum) e resultado (Em andamento), caixa de texto, a confirmação "Ação registrada." e a lista "Ações registradas (3)", em que a mais recente está datada de 23/10/2026 e mostra "Score na hora do registro: 27,6". A data é a da captura: o app grava a hora real do registro, enquanto a data de referência dos dados é 15/10/2026; as outras duas ações vêm dos dados sintéticos. · **Por que importa:** é o único registro manual do sistema, e cada ação grava o score e a cor do momento ([RN-15](../02-definicao/02-regras-de-negocio.md)).
 
 ### 13 · Alertas de queda brusca (v1.1)
 ![Página "Alertas de queda brusca" com 19 contas, MRR somado de R$ 12.122, e por conta o score antes e agora, a queda, a maior causa e o MRR](13-alertas-queda-brusca.png)

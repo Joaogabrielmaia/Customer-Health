@@ -13,6 +13,8 @@
 
 **Rafael:** Serve, desde que o porquê seja rápido. Eu faço uns 12 contatos por dia. Se eu levar 10 minutos para entender cada conta, não uso.
 
+> Nota: o volume citado aqui (cerca de 12 contatos por dia) difere do da [reunião 1](03-reuniao-lider-de-cs.md) (cerca de 15 contatos por semana por CSM).
+
 **Rafael:** Também: não quero digitar dados. Já preencho a planilha, o CRM do comercial e o Slack. Se o sistema me pedir mais cadastro, abandono.
 
 **João:** O único registro manual seria a ação que você fez com a conta: ligação, resultado, nota. Combinado?
