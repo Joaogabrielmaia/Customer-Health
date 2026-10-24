@@ -2,6 +2,10 @@
 
 Formato baseado em [Keep a Changelog](https://keepachangelog.com/pt-BR/1.1.0/) e versionamento semântico.
 
+## [Não lançado]
+### Corrigido
+- O Playwright usava a porta 3100 fixa e não subia o servidor quando outro processo a ocupava; agora lê `PORT`, com 3100 como padrão.
+
 ## [1.1.0] · 2026-10-23
 ### Adicionado
 - Alerta de queda brusca de score: contas que perderam 15 pontos ou mais em 30 dias, com a dimensão que mais pesou (RF-14, HU-12, RN-17).
