@@ -1,0 +1,35 @@
+erDiagram
+    dim_conta ||--o{ fato_score_semanal : conta_id
+    dim_conta ||--|| fato_carteira_atual : conta_id
+    dim_conta ||--o{ fato_acoes : conta_id
+    dim_data ||--o{ fato_score_semanal : data
+    dim_data ||--o{ fato_acoes : dia
+    dim_conta {
+        text conta_id PK
+        text segmento
+        text plano
+        text csm
+        int mrr
+        date fim_contrato
+    }
+    fato_score_semanal {
+        date data
+        text conta_id FK
+        decimal score
+        text cor
+    }
+    fato_carteira_atual {
+        text conta_id FK
+        decimal score
+        decimal variacao_30d
+        int urgencia_brl
+    }
+    fato_acoes {
+        datetime data
+        text conta_id FK
+        text canal
+        text resultado
+    }
+    dim_data {
+        date data PK
+    }

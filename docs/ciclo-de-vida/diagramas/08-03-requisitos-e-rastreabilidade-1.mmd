@@ -1,0 +1,7 @@
+flowchart LR
+    N[Necessidade] --> RQ[Requisito RF/RNF]
+    RQ --> HU[História e critério de aceite]
+    HU --> RN[Regra de negócio]
+    RN --> IMP[Implementação em src/]
+    IMP --> TST[Teste automatizado]
+    TST --> EVD[Print e log de execução]

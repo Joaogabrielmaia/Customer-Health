@@ -1,0 +1,7 @@
+flowchart LR
+    U([Usuários de CS]) --> LB[Entrada HTTPS]
+    LB --> APP[Aplicação Next.js em Node]
+    APP --> DBP[(PostgreSQL gerenciado com backup)]
+    APP --> LOG[Logs e verificação de saúde]
+    ENV[Variáveis de ambiente e segredos] -.-> APP
+    IMP[Importador de dados reais e anonimizados] --> DBP

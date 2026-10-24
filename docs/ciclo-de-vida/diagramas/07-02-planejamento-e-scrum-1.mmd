@@ -1,0 +1,7 @@
+flowchart LR
+    PG[Product Goal] --> PB[Product Backlog]
+    PB --> S1[Sprint 1<br/>motor do score] --> S2[Sprint 2<br/>fluxo do CS] --> S3[Sprint 3<br/>controle e prova]
+    S3 --> R1{{Release v1.0.0}}
+    R1 --> RT[Retrospectiva da release]
+    RT --> RF[Refinamento: M1, M2, M3]
+    RF --> S4[Sprint 4<br/>alerta de queda] --> R2{{Release v1.1.0}}

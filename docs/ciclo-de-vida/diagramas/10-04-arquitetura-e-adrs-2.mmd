@@ -1,0 +1,24 @@
+flowchart TB
+    NAV[Navegador]
+    subgraph SRV["Servidor Next.js"]
+        MW[middleware: sessão JWT]
+        PAG[Páginas e componentes]
+        SA[Server Actions]
+        API[Rota /api/export]
+        CORE[Núcleo puro: src/lib/score]
+        DAT[lib/data: Prisma e cache de 30 s]
+    end
+    DB[(PostgreSQL 16)]
+    SCR[Scripts: seed, sensitivity, bench, export-powerbi]
+    NAV --> MW --> PAG
+    NAV --> SA
+    NAV --> API
+    PAG --> DAT
+    SA --> DAT
+    API --> DAT
+    PAG --> CORE
+    SA --> CORE
+    API --> CORE
+    DAT --> DB
+    SCR --> CORE
+    SCR --> DB

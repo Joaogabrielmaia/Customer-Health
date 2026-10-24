@@ -24,3 +24,9 @@ Termos e siglas usados no Termômetro, com uma linha cada e o lugar onde aparece
 | ADR | Registro de uma decisão de arquitetura: contexto, alternativas, escolha e trade-off. | [ADRs](04-arquitetura/01-adrs.md) |
 | E2E | Teste de ponta a ponta: um navegador automatizado percorre o fluxo real do sistema. | [Qualidade](05-qualidade/01-plano-e-resultados.md) |
 | DAX | Linguagem das medidas do Power BI. | [Power BI](../powerbi/README.md) |
+| Scrum, sprint e Product Backlog | Método de trabalho em ciclos curtos (sprints), com uma lista priorizada do que construir (Product Backlog). | [Planejamento e Scrum](ciclo-de-vida/02-planejamento-e-scrum.md) |
+| Definition of Done | Lista de condições que um item precisa cumprir para ser considerado concluído. | [Planejamento e Scrum](ciclo-de-vida/02-planejamento-e-scrum.md#definition-of-done) |
+| RACI | Matriz que indica quem executa (R), responde (A), é consultado (C) e é informado (I) em cada atividade. | [Requisitos e rastreabilidade](ciclo-de-vida/03-requisitos-e-rastreabilidade.md) |
+| Rastreabilidade | Ligação entre necessidade, requisito, regra, código, teste e evidência. | [Requisitos e rastreabilidade](ciclo-de-vida/03-requisitos-e-rastreabilidade.md) |
+| Esquema estrela | Modelo de dados para BI com tabelas de fatos (medidas) ligadas a dimensões (cadastros). | [Modelo de dados](ciclo-de-vida/05-modelo-de-dados.md) |
+| Mermaid | Linguagem de texto para desenhar diagramas que o GitHub renderiza. | [Diagramas](ciclo-de-vida/diagramas/README.md) |

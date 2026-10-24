@@ -1,0 +1,8 @@
+stateDiagram-v2
+    [*] --> Verde: score maior ou igual ao limite verde
+    [*] --> Amarela: score entre o limite amarelo e o verde
+    [*] --> Vermelha: score abaixo do limite amarelo
+    Verde --> Amarela: score cai abaixo do limite verde
+    Amarela --> Vermelha: score cai abaixo do limite amarelo
+    Vermelha --> Amarela: score sobe ao limite amarelo
+    Amarela --> Verde: score sobe ao limite verde
