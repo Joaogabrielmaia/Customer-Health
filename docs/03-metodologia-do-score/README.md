@@ -101,7 +101,7 @@ Padrão: **verde ≥ 75**, **amarelo 50 a 74,9**, **vermelho < 50** (configuráv
 - **Causalidade**: queda de uso pode ser causa ou consequência de um problema.
 
 ## 9. Análise de sensibilidade
-Executei 22 cenários sobre as 120 contas sintéticas (`npm run sensitivity`): variar cada peso em ±50%, pesos iguais, remover uma dimensão e deslocar os limites em ±5 pontos. Tabela completa e gerada: [sensibilidade-resultados.md](sensibilidade-resultados.md).
+Executei 21 cenários mais o caso-base (22 linhas na tabela) sobre as 120 contas sintéticas (`npm run sensitivity`): variar cada peso em ±50%, pesos iguais, remover uma dimensão e deslocar os limites em ±5 pontos. Tabela completa: [sensibilidade-resultados.md](sensibilidade-resultados.md), gerada por `npm run sensitivity` (semente 20261015).
 
 Métricas por cenário: contas que mudam de cor, correlação de Spearman entre o ranking de scores e o da configuração base, quantas das 15 contas mais urgentes continuam entre as 15 mais urgentes e a variação média absoluta do score.
 
@@ -123,3 +123,15 @@ Base: 69 verdes, 40 amarelas e 11 vermelhas.
 2. Calcular o score de cada uma 90 dias antes da decisão.
 3. Comparar as distribuições (separação entre os dois grupos) e ajustar pesos e limites para equilibrar falsos alertas e contas perdidas.
 4. Repetir a sensibilidade com o novo ajuste e registrar a mudança de configuração.
+
+## Glossário rápido
+
+| Termo | Significado |
+|---|---|
+| Saudável · Atenção · Crítica | Verde, amarelo e vermelho na tela; `GREEN`, `YELLOW` e `RED` nos dados e nos CSVs. |
+| Frota+ | Plano de 41 a 120 veículos; aparece como `FROTA_PLUS` no banco e no código. |
+| Contrato (RN-07) | Dimensão do score: quanto falta para a renovação. Marca o momento de decisão. |
+| Urgência (RN-11) | Ordem de contato: risco × MRR × proximidade da renovação. É outra conta, não entra no score. |
+| Heurística | Regra construída por julgamento, sem calibração com cancelamentos reais. |
+
+Mais termos em [docs/GLOSSARIO.md](../GLOSSARIO.md).

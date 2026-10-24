@@ -21,4 +21,4 @@ Formato baseado em [Keep a Changelog](https://keepachangelog.com/pt-BR/1.1.0/) e
 - Configuração de pesos com simulação e efeito imediato (RF-09, RF-10).
 - Análise de sensibilidade em tela e em documento (RF-11).
 - Exportação CSV de carteira, histórico e ações (RF-12).
-- Testes unitários, de integração e E2E; 13 prints; complemento para Power BI.
+- Testes unitários, de integração e E2E; 13 prints (v1.0); complemento para Power BI.

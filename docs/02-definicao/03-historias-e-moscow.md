@@ -44,7 +44,7 @@ Como líder (Admin), quero ajustar pesos e limites e ver o efeito.
 
 ## HU-08 · Ver quão sensível é o modelo (RF-11) — Should
 Como líder, quero saber o quanto o resultado muda se os pesos mudarem.
-- Então vejo uma tabela de 22 cenários com mudança de cor, correlação de ranking e permanência do top 15.
+- Então vejo uma tabela com 21 cenários mais o caso-base (22 linhas) com mudança de cor, correlação de ranking e permanência do top 15.
 
 ## HU-09 · Exportar dados (RF-12) — Must
 Como líder, quero exportar a carteira em CSV para usar em outra ferramenta.

@@ -4,11 +4,11 @@
 
 ## Entregue
 - Configuração de pesos e limites com **simulação** e **efeito imediato** ao salvar (somente Admin salva).
-- Análise de sensibilidade em tela (22 cenários) e em documento gerado por script.
+- Análise de sensibilidade em tela (21 cenários mais o caso-base) e em documento gerado por script.
 - Exportação CSV (carteira, histórico semanal, ações).
-- Testes E2E (13) e geração de 13 prints (`00` a `12`), incluindo mobile.
+- Testes E2E (13, v1.0) e geração de 13 prints (v1.0, `00` a `12`), incluindo mobile.
 - Export para Power BI e guia (`powerbi/`).
-- Documentação das fases 0 a 10.
+- Documentação do projeto.
 
 ## O que descobri
 - A sensibilidade em tela leva ~2,8 s de cálculo; aceitável para uma tela de análise, mas é o primeiro lugar que quebraria com mais contas ([desempenho](../04-arquitetura/05-desempenho.md)).

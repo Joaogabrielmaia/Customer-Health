@@ -2,7 +2,7 @@
 
 ## Reunião 3 — Cliente-tipo (dono de transportadora)
 
-> Simulação: o Claude interpretou o cliente nesta conversa.
+> Reunião simulada; pessoas e empresa fictícias.
 
 **Participante (fictício):** Carlos Pereira, dono de uma pequena transportadora com 14 veículos, cliente há dois anos.
 **Objetivo:** entender quando um cliente "esfria" e o que faria o CS ser útil, não chato.

@@ -6,7 +6,7 @@ Medido de verdade com `npm run bench` (Node 24, Windows 11, máquina de desenvol
 |---|---:|---:|
 | Score da carteira (120 contas; hoje e 30 dias antes) | 106,1 ms | 167,0 ms |
 | Tendência de 12 semanas (120 × 12 cálculos) | 795,5 ms | 874,8 ms |
-| Sensibilidade (22 cenários × 120 contas × 2 cálculos) | 2.765,5 ms | 3.074,9 ms |
+| Sensibilidade (21 cenários mais o caso-base × 120 contas × 2 cálculos) | 2.765,5 ms | 3.074,9 ms |
 
 ## Leitura
 - O painel executivo faz o score da carteira **e** a tendência de 12 semanas, então o cálculo fica na faixa de ~0,9 s, mais o tempo de carregar dados do banco (cache de 30 s dos dados brutos). O **cálculo** cabe na meta de 2 s (RNF-01) no ambiente local com 120 contas. **Não medi** o tempo total de carregamento da página (banco + renderização no navegador) nem carteiras maiores.

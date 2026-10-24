@@ -1,6 +1,6 @@
 # 03 · Reunião 1 — Líder de CS
 
-> Simulação: o Claude interpretou o cliente nesta conversa.
+> Reunião simulada; pessoas e empresa fictícias.
 
 **Participantes (fictícios):** Marcela Andrade (líder de CS) e eu, João Gabriel.
 **Objetivo:** entender o que ela espera do painel e o que ela decide com ele.

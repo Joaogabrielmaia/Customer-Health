@@ -1,7 +1,6 @@
 # Complemento para Power BI
 
-> O Claude Code **não gera o arquivo `.pbix`**. Este guia entrega os CSVs, o modelo de dados, as medidas DAX e um passo a passo para eu montar o relatório e tirar os prints em [`docs/screenshots/powerbi/`](../docs/screenshots/powerbi/).
-> Os dados são **sintéticos**. Os prints do Power BI ainda **não existem**: a pasta tem só um `.gitkeep` e eu os adiciono depois de montar o relatório.
+Este repositório inclui os CSVs e as medidas DAX. O arquivo .pbix e os prints do relatório não estão incluídos. Os dados são **sintéticos**.
 
 ## 1. Arquivos de dados
 Gerados por `npm run export:powerbi` (sem banco, a partir do gerador com a semente fixa) em [`powerbi/data/`](data/):
@@ -9,7 +8,7 @@ Gerados por `npm run export:powerbi` (sem banco, a partir do gerador com a semen
 | Arquivo | Linhas | Conteúdo |
 |---|---:|---|
 | `dim_conta.csv` | 120 | Cadastro da conta: segmento, plano, veículos, cidade, CSM, MRR, fim do contrato |
-| `fato_score_semanal.csv` | 1.355 | Score, cor e as 6 dimensões por conta e semana (12 semanas) |
+| `fato_score_semanal.csv` | 1.355 | Score, cor e as 6 dimensões por conta e semana (12 semanas × 120 contas = 1.440, menos 85 pares em que a conta ainda não existia na data) |
 | `fato_carteira_atual.csv` | 120 | Score atual, cor, variação em 30 dias, dias para renovar e urgência |
 | `fato_acoes.csv` | 64 | Ações do CS: data, conta, CSM, canal, playbook, resultado |
 
@@ -143,10 +142,10 @@ Observação: `MRR em Risco` usa `RELATED`, que exige o relacionamento `fato_car
 6. **Página 2 · Contas em risco**: tabela com `conta`, `csm`, `score`, `cor`, `variacao_30d`, `dias_para_renovacao`, `urgencia_brl`; filtre `cor ≠ GREEN`; ordene por `urgencia_brl` decrescente; formatação condicional da coluna `cor`.
 7. **Página 3 · Ações do CS**: `Acoes Registradas`, `Pct Acoes Resolvidas`, barras por `resultado` e por `playbook`; segmentação por `csm`.
 8. **Formatação**: cores consistentes com o sistema (verde `#15803d`, amarelo `#d97706`, vermelho `#b91c1c`); sempre rótulo textual além da cor.
-9. **Prints**: exiba cada página em tela cheia e salve em [`docs/screenshots/powerbi/`](../docs/screenshots/powerbi/) como `01-visao-executiva.png`, `02-contas-em-risco.png`, `03-acoes-do-cs.png`.
+9. **Prints**: exiba cada página em tela cheia e salve uma imagem por página (visão executiva, contas em risco, ações do CS).
 10. **Conferência**: os valores devem bater com o sistema na data de referência: **11 contas críticas, 40 em atenção, 69 saudáveis**, score médio **77,2** e **MRR crítico R$ 7.234** (configuração padrão). Se não batem, revise tipos e relacionamentos.
 
 ## 5. Limitações
-- O `.pbix` não está no repositório (não foi gerado).
+- O `.pbix` não está no repositório.
 - Os CSVs são um retrato fixo; para atualizar, rode `npm run export:powerbi` de novo.
 - `fato_score_semanal` usa a configuração padrão de pesos; se você mudar os pesos no sistema, exporte pela API para refletir.

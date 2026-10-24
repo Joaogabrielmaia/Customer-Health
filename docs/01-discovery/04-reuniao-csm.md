@@ -1,6 +1,6 @@
 # 04 · Reunião 2 — CSM
 
-> Simulação: o Claude interpretou o cliente nesta conversa.
+> Reunião simulada; pessoas e empresa fictícias.
 
 **Participantes (fictícios):** Rafael Teixeira (CSM, atende 40 contas) e eu.
 **Objetivo:** entender o dia a dia de quem executa e o que ele precisa para agir.
