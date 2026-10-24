@@ -1,3 +1,16 @@
+# Episódio 0 — Sobre este caso
+
+A Frota Leve é uma empresa fictícia de gestão de frotas, com 120 clientes e um time de CS de 3 pessoas que decide "quem contatar" de memória. Este episódio fixa o cenário e separa o que é real do que é simulado: pessoas, empresa e dados são inventados, as reuniões são simuladas e os números de uso, chamados, NPS e faturas saem de um gerador com semente fixa. Importa porque tudo o que vem depois (o score, a sensibilidade, os testes) vale para esse dado, e não para clientes reais.
+
+| Documento | O que contém | Itens |
+|---|---|---|
+| [Sobre este caso](#sobre-este-caso) | O que é o Termômetro, o cenário da Frota Leve e a tabela "Real × simulado" | 8 linhas na tabela |
+| [Dados sintéticos](dados-sinteticos.md) | Como o gerador cria as contas, a calibragem e o volume gerado | 8 arquétipos; 41.578 registros de uso, 504 chamados, 184 NPS, 805 faturas, 64 ações |
+
+[← README](../../README.md) · [Índice](../INDEX.md) · [Episódio 1 →](../01-discovery/README.md)
+
+---
+
 # Sobre este caso
 
 Este repositório é um estudo de caso completo, do discovery à entrega, sobre como acompanhar a saúde de uma carteira de clientes em um SaaS.
@@ -22,6 +35,10 @@ Um painel que mostra a saúde de cada cliente de um SaaS (verde, amarelo e verme
 | Resultados de testes, tempos e distribuições | Executados e copiados da saída real. Ganhos esperados aparecem como **hipóteses**. |
 | Execução | Local (Docker Compose para o banco). As provas são prints e documentos. |
 | Segredos | `.env` fica fora do repositório; só `.env.example` é versionado. |
+
+## Como o discovery foi feito
+
+O discovery tem seis registros simulados: três reuniões de discovery (líder de CS, CSM e uma persona de dono de transportadora), a validação de wireframes, a reunião de aceitação e a retrospectiva. Em cada um há pedidos vagos, que refinei em requisitos, e contradições: a líder quer um número só e o CSM quer contexto. A restrição que mais mudou o escopo foi a de 15 contatos por semana por CSM, que trouxe a urgência e tirou a integração com CRM. Tudo está em [Discovery](../01-discovery/README.md); os registros posteriores estão nos episódios 4, 5 e 6.
 
 ## Como ler
 
